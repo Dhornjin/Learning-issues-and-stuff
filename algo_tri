@@ -1,0 +1,22 @@
+fusion de données de deux fichiers pays en ordre croissant en un fichier en ordre croissant
+fichier payA
+fichier payB
+création C
+
+variable
+perfA   alphanumérique = 0
+perfB   alphanumérique = 0
+iA       numérique = 0
+iB       numérique = 0
+
+Tant Que perfA ET perfB =/= " " ou 0
+ouvrir payA sur 1+iA vers perfA
+ouvrir payB sur 1+iB vers perfB
+  si PerfA < PerfB et =/= " "
+    C <- C + perfA 
+    iA+1
+  sinon si perA > perfB et =/= " "
+    C <- C+ PerfB
+    iB+1
+  fin Si
+fin tant que
