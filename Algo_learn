@@ -47,7 +47,7 @@ TQ purg = null
   lecture ""(1) vers purg.
   
 FTQ
-TQ i > saisie(len)
+TQ i <= saisie(len)
 MID(saisie,i,1) to check
     SI check = purg 
       check = "".
