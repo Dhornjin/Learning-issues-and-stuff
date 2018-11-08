@@ -26,3 +26,35 @@ si nbr > 0
   afficher  "mots"
 sinon
 afficher " ceci n'est pas une phrase."
+
+
+____________________________
+fonction qui purge une chaine d'un caractère. la chaine comme el caracère étant passé en argument. Si le caractrère ne fait pas partie de la chaine, 
+celle ci devra être retournée intact
+ex : purge ("coucou", "o") -> cucu.
+
+DECLARATION
+saisie        alphanumérique 
+purg          alphanumérique
+check         alphanumérique
+i             numérique = 0
+TQ saisie = null
+  afficher "veuillez saisir une phrase."
+  lecture "" requis vers saisie
+FTQ
+TQ purg = null
+  afficher "saisir el cractère a purger."
+  lecture ""(1) vers purg.
+  
+FTQ
+TQ i > saisie(len)
+MID(saisie,i,1) to check
+    SI check = purg 
+      check = "".
+      move check to MID (saisie, i, 1)
+      i+1
+     FIN SI
+ FTQ
+
+
+
