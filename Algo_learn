@@ -37,21 +37,17 @@ ex : purge ("coucou", "o") -> cucu.
 déclaration fonction purge
 check         alphanumérique
 i             numérique = 0
-length        numérique = 0
+
 final         alphanumérique        
 
 fontion purge
-length <- len(saisie) 
+
 
 TQ i <= saisie(len)
 MID(saisie,i,1) to check
     SI check =/= purg
          final=final+check
-
-    
-*>      check <- MID(saisie,i+1,length-i) / trouver une solution via concatainage?
-
-
+****************************************>      check <- MID(saisie,i+1,length-i) / trouver une solution via concatainage?
       i <- i+1
      FIN SI
  FTQ
