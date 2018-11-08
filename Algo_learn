@@ -2,20 +2,27 @@ _______________________________
 demander phrase à user, afficher nombre de mots de la phrase.
 
 saisie      alphanumérique
-nbr         numérique       2caractère
+check       alphanumérique
+nbr         numérique       2caractère = 0
+i           numérique       =0
 
 Début.
 TQ saisie = null
   afficher "veuillez saisir une phrase."
   lecture "" requis vers saisie
-  ajouter " " à saisie
+
 FTQ
   accepter saisie
-trouver(saisie, " " to nbr)
-
+TQ  
+  MID(saisie,i,1) to check
+  if check = " "
+  nbr <-nbr + 1                                               /*
+  end if
+  i<-i+1
+FTQ
 si nbr > 0
   afficher  "Votre phrase devrait contenir"
-  afficher nbr.
+  afficher nbr+1.
   afficher  "mots"
 sinon
 afficher " ceci n'est pas une phrase."
