@@ -13,7 +13,7 @@ TQ saisie = null
 
 FTQ
   accepter saisie
-TQ  
+TQ i<= len(saisie)
   MID(saisie,i,1) to check                                    /* fail, le but était d'utiliser mid
   if check = " "
   nbr <-nbr + 1                                               /*  la synthaxe dois comtuer la var plutot que le calcul seul.
