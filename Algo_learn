@@ -14,11 +14,11 @@ TQ saisie = null
 FTQ
   accepter saisie
 TQ  
-  MID(saisie,i,1) to check
+  MID(saisie,i,1) to check                                    /* fail, le but était d'utiliser mid
   if check = " "
-  nbr <-nbr + 1                                               /*
+  nbr <-nbr + 1                                               /*  la synthaxe dois comtuer la var plutot que le calcul seul.
   end if
-  i<-i+1
+  i<-i+1                                                      /*  idem
 FTQ
 si nbr > 0
   afficher  "Votre phrase devrait contenir"
