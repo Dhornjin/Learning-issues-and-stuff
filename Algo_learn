@@ -36,16 +36,12 @@ ex : purge ("coucou", "o") -> cucu.
 DECLARATION
 saisie        alphanumérique 
 purg          alphanumérique
+
+----------module
+déclaration fonction
 check         alphanumérique
 i             numérique = 0
-TQ saisie = null
-  afficher "veuillez saisir une phrase."
-  lecture "" requis vers saisie
-FTQ
-TQ purg = null
-  afficher "saisir el cractère a purger."
-  lecture ""(1) vers purg.
-  
+fontion purge
 FTQ
 TQ i <= saisie(len)
 MID(saisie,i,1) to check
@@ -55,6 +51,18 @@ MID(saisie,i,1) to check
       i+1
      FIN SI
  FTQ
+--------------
 
+DEBUT
+
+TQ saisie = null
+  afficher "veuillez saisir une phrase."
+  lecture "" requis vers saisie
+FTQ
+TQ purg = null
+  afficher "saisir el cractère a purger."
+  lecture ""(1) vers purg.
+  
+executer purge
 
 
