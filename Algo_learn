@@ -37,18 +37,21 @@ DECLARATION
 saisie        alphanumérique 
 purg          alphanumérique
 
-----------module
-déclaration fonction
+----------module purge
+déclaration fonction purge
 check         alphanumérique
 i             numérique = 0
+length        numérique = 0
+
 fontion purge
+length <- len(saisie) 
 FTQ
 TQ i <= saisie(len)
 MID(saisie,i,1) to check
     SI check = purg 
-      check = "".
+      check = MID(saisie,i+1,length-i) to check
       move check to MID (saisie, i, 1)
-      i+1
+      i <- i+1
      FIN SI
  FTQ
 --------------
