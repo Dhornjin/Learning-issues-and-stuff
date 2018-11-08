@@ -33,28 +33,35 @@ fonction qui purge une chaine d'un caractère. la chaine comme el caracère éta
 celle ci devra être retournée intact
 ex : purge ("coucou", "o") -> cucu.
 
-DECLARATION
-saisie        alphanumérique 
-purg          alphanumérique
-
 ----------module purge
 déclaration fonction purge
 check         alphanumérique
 i             numérique = 0
 length        numérique = 0
+final         alphanumérique        
 
 fontion purge
 length <- len(saisie) 
-FTQ
+
 TQ i <= saisie(len)
 MID(saisie,i,1) to check
-    SI check = purg 
-      check = MID(saisie,i+1,length-i) to check
-      move check to MID (saisie, i, 1)
+    SI check =/= purg
+         final=final+check
+
+    
+*>      check <- MID(saisie,i+1,length-i) / trouver une solution via concatainage?
+
+
       i <- i+1
      FIN SI
  FTQ
+retourner final
 --------------
+
+
+DECLARATION
+saisie        alphanumérique 
+purg          alphanumérique
 
 DEBUT
 
@@ -63,9 +70,12 @@ TQ saisie = null
   lecture "" requis vers saisie
 FTQ
 TQ purg = null
-  afficher "saisir el cractère a purger."
+  afficher "saisir le cractère a purger."
   lecture ""(1) vers purg.
-  
-executer purge
+FTQ
+
+varbiable<-purge(saisie, purg)
+afficher"variable"
+
 
 
