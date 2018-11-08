@@ -1,0 +1,19 @@
+_______________________________
+demander phrase à user, afficher nombre de mots de la phrase.
+
+saisie      alphanumérique
+nbr         numérique       2caractère
+
+Début.
+TQ saisie = null
+  afficher "veuillez saisir une phrase."
+  recevoir saisie " " requis
+FTQ
+  accepter saisie
+trouver(saisie, " " to nbr)
+si nbr > 0
+  afficher  "Votre phrase devrait contenir"
+  afficher nbr+1.
+  afficher  "mots"
+sinon
+afficher " ceci n'est pas une phrase."
