@@ -6,8 +6,8 @@ fichier payB  séquentiel  numérique
 création C
 
 variable
-perfA   alphanumérique = 0
-perfB   alphanumérique = 0
+perfA   numérique = 0
+perfB   numérique = 0
 iA       numérique = 0
 iB       numérique = 0
 
@@ -17,12 +17,13 @@ ouvrir payB
 Tant Que perfA ET perfB =/= " " ou 0
 payA sur 1+iA vers perfA
 payB sur 1+iB vers perfB
-  si PerfA < PerfB et =/= " "
+  si PerfA(r) < PerfB et =/= " "
     C <- C + perfA 
     iA+1
   sinon si perA > perfB et =/= " "
-    C <- C+ PerfB
+    C <- C(r) + PerfB
     iB+1
+    r+1
   fin Si
 fin tant que
 fermeture payA
