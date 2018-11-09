@@ -1,6 +1,8 @@
 fusion de données de deux fichiers pays en ordre croissant en un fichier en ordre croissant
-fichier payA
-fichier payB
+
+fichier payA  séquentiel  numérique
+fichier payB  séquentiel  numérique
+
 création C
 
 variable
@@ -8,8 +10,6 @@ perfA   alphanumérique = 0
 perfB   alphanumérique = 0
 iA       numérique = 0
 iB       numérique = 0
-fichier payA  séquentiel  numérique
-fichier payB  séquentiel  numérique
 
 début
 ouvrir payA
