@@ -2,7 +2,6 @@ fusion de données de deux fichiers pays en ordre croissant en un fichier en ord
 
 fichier payA  séquentiel  numérique
 fichier payB  séquentiel  numérique
-
 création C
 
 variable
@@ -15,13 +14,13 @@ début
 ouvrir payA
 ouvrir payB
 Tant Que perfA ET perfB =/= " " ou 0
-payA sur 1+iA vers perfA
-payB sur 1+iB vers perfB
-  si PerfA(r) < PerfB et =/= " "
-    C <- C + perfA 
+perfA <- payA(1+iA) 
+perfB <- payB(1+iB)  
+  si PerfA < PerfB et =/= " "
+    C(r) <- C(r) + perfA 
     iA+1
   sinon si perA > perfB et =/= " "
-    C <- C(r) + PerfB
+    C(r) <- C(r) + PerfB
     iB+1
     r+1
   fin Si
