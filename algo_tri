@@ -31,38 +31,44 @@ fermeture C
 FIN
 
 ___________________________________________
-en modules
+********
+module fonction ouverture
 
-module
-
-fonction tri
+debut
+ouverture fichier payA
+ouverture fichier payB
+ouverture fichier C
+fin
+********
+module fonction fermeture
+début
+fermeture fichier PayA
+fermeture fichier PayB
+fermeture fichier C
+fin
+*********************
 variables
 perfA   numérique = 0
 perfB   numérique = 0
 iA       numérique = 0
 iB       numérique = 0
-
 fichier payA  séquentiel  numérique
 fichier payB  séquentiel  numérique
 création C
-début
+
+DEBUT
+executer fonction ouverture
+Tant Que perfA ET perfB =/= " " ou 0
 perfA <- payA(1+iA) 
-perfB <- payB(1+iB) 
+perfB <- payB(1+iB)  
   si PerfA < PerfB et =/= " "
     C(r) <- C(r) + perfA 
-    iA=iA+1
+    iA+1
   sinon si perA > perfB et =/= " "
     C(r) <- C(r) + PerfB
-    iB=iB+1
-    r=r+1
+    iB+1
+    r+1
   fin Si
-fermeture payA
-fermeture payB
- sortir C
- fin
- 
-
-
-
-
-
+fin tant que
+exectuter fonction fermeture.
+FIN
