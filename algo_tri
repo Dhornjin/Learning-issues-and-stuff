@@ -1,14 +1,14 @@
 fusion de données de deux fichiers pays en ordre croissant en un fichier en ordre croissant
-
-fichier payA  séquentiel  numérique
-fichier payB  séquentiel  numérique
-création C
-
 variable
+
 perfA   numérique = 0
 perfB   numérique = 0
 iA       numérique = 0
 iB       numérique = 0
+
+fichier payA  séquentiel  numérique
+fichier payB  séquentiel  numérique
+création C
 
 début
 ouvrir payA
@@ -28,3 +28,39 @@ fin tant que
 fermeture payA
 fermeture payB
 FIN
+
+___________________________________________
+en modules
+
+module
+
+fonction tri
+variables
+perfA   numérique = 0
+perfB   numérique = 0
+iA       numérique = 0
+iB       numérique = 0
+
+fichier payA  séquentiel  numérique
+fichier payB  séquentiel  numérique
+création C
+début
+perfA <- payA(1+iA) 
+perfB <- payB(1+iB) 
+  si PerfA < PerfB et =/= " "
+    C(r) <- C(r) + perfA 
+    iA=iA+1
+  sinon si perA > perfB et =/= " "
+    C(r) <- C(r) + PerfB
+    iB=iB+1
+    r=r+1
+  fin Si
+ sortir 
+ C
+ fin
+ 
+
+
+
+
+
